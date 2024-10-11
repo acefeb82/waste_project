@@ -1,0 +1,683 @@
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Mitr:wght@200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Noto+Sans+Thai:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ส่วนเนื้อหา */
+body {
+    background-color: rgb(2, 28, 1);
+    margin: 0;
+    overflow-x: hidden;
+    min-height: 100vh;
+
+}
+
+/* หน้าแอปพลิเคชัน */
+#homePage {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* การแสดงผลในหน้าแรก และหน้าแอปพลิเคชัน */
+#firstPage,
+#homePage,
+#home-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* การแสดงผลหน้าแอปพพพลิเคชัน */
+#home,
+#home2 {
+    width: 100%;
+    height: 100%;
+}
+
+/* การแสดงผลหน้าแรก (หน้าปก) */
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/4bin.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Noto Sans Thai", sans-serif;
+    font-weight: 400;
+}
+
+/* การแสดงเนื้อหาในหน้าแรก */
+.banner-content {
+    max-width: 800px;
+}
+
+/* ตัวอักษรในหน้าแรก */
+.banner h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+/* ตัวอักษรที่ไฮไลต์ในหน้าแรก */
+.banner h1 mark {
+    color: black;
+    font-weight: 900;
+    background-color: #a8f28f;
+}
+
+/* ตัวอักษรที่เขียนอธิบายในหน้าแรก */
+.banner p {
+    font-size: 1.5rem;
+    margin: 20px 20px;
+}
+
+/* Call to Action Buttons */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.cta-btn {
+    padding: 15px 20px;
+    background-color: rgb(233, 183, 142);
+    color: black;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Noto Sans Thai", sans-serif;
+}
+
+.cta-btn:hover {
+    background-color: rgb(237, 226, 191);
+}
+
+/* Home Styles */
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.bint h2 {
+    color: rgb(208, 244, 154);
+    display: flex;
+    justify-content: center;
+}
+
+.bint p {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 1.2rem;
+}
+
+.bint h2 {
+    padding-top: 30px;
+    font-size: 3rem;
+    font-family: "Noto Sans Thai", sans-serif;
+}
+
+.card {
+    background-color: #f5faf1;
+    border-radius: 20px;
+    padding: 20px;
+    width: 230px;
+    /* เพิ่มความกว้างให้เหมาะสม */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100px;
+    height: auto;
+}
+
+.card h2 {
+    margin: 15px 0;
+    font-size: 1.5em;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Noto Sans Thai", sans-serif;
+    color: rgb(208, 244, 154);
+}
+
+.circle {
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    padding: 30px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* ปุ่มเลือกถ่ายรูปหรืออัปโหลด */
+.camera-btn {
+    padding: 15px 30px;
+    background-color: black;
+    /* ค่าเริ่มต้นเป็นสีขาว */
+    color: white;
+    border: 2px solid rgba(112, 69, 49, 0.9);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Noto Sans Thai", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 10px;
+    width: 200px;
+    /* ทำให้ปุ่มมีขนาดเท่ากัน */
+    text-align: center;
+}
+
+/* ปุ่มเลือกถ่ายรูปหรืออัปโหลดหลังถูกกด */
+.camera-btn.selected {
+    background-color: rgba(112, 69, 49, 0.9);
+    color: #eed4c6;
+}
+
+.camera-btn:hover {
+    background-color: rgba(112, 69, 49, 0.9);
+    color: #eed4c6;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* ปุ่ม "วิธีการใช้งาน" */
+.how-to-btn {
+    display: block;
+    margin: 5px auto;
+    padding: 10px 20px;
+    background-color: rgba(112, 69, 49, 0.2);
+    color: #eed4c6;
+    border: 0.8px solid #eed4c6;
+    border-radius: 10px;
+    font-family: "Noto Sans Thai", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.how-to-btn:hover {
+    background-color: #eed4c6;
+    color: rgba(112, 69, 49, 0.9);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    /* ซ่อน modal ตอนเริ่มต้น */
+    position: fixed;
+    /* คงที่ */
+    z-index: 1;
+    /* อยู่เหนือเนื้อหา */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* ครอบคลุมทั้งหน้าจอ */
+    height: 100%;
+    /* ครอบคลุมทั้งหน้าจอ */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* พื้นหลังครึ่งโปร่งใส */
+}
+
+/* เนื้อหา modal */
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 15% auto;
+    /* กึ่งกลางในแนวตั้ง */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px;
+    /* กำหนดความกว้างของ modal */
+    border-radius: 15px;
+}
+
+.modal-content h2 {
+    font-family: "Bai Jamjuree", sans-serif;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.modal-content p {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 1rem;
+    color: #282E20;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    align-items: left;
+}
+
+/* ปุ่มปิด modal */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* แบ่งคอลัมน์เป็น 2 คอลัมน์เท่า ๆ กัน */
+    gap: 30px;
+    /* ระยะห่างระหว่างสองคอลัมน์ */
+    width: 100%;
+    /* ใช้เต็มความกว้าง */
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 80px;
+    box-sizing: border-box;
+    /* ให้รวม padding ในขนาด */
+}
+
+.left {
+    display: flex;
+    /* ใช้ flex เพื่อจัดการองค์ประกอบภายใน */
+    margin-top: 0;
+    flex-direction: column;
+    /* จัดให้แนวตั้ง */
+    align-items: center;
+    height: auto; /* ปรับความสูงอัตโนมัติ */
+}
+
+.head-photo {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    font-family: "Noto Sans Thai", sans-serif;
+    font-weight: 600;
+    color: #e9d8cf;
+    width: 100%; /* ทำให้กว้างเต็มที่ */
+    border-radius: 15px 15px 0 0;
+}
+
+.head-photo2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    font-family: "Noto Sans Thai", sans-serif;
+    font-weight: 600;
+    color: #5d5340;
+    background-color: #f1c7b0;
+    width: 100%; /* ทำให้กว้างเต็มที่ */
+    border-radius: 15px 15px 0 0;
+}
+
+.right {
+    display: flex;
+    /* ใช้ flex เพื่อจัดการองค์ประกอบภายใน */
+    flex-direction: column;
+    /* จัดให้แนวตั้ง */
+    margin-top: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    /* ขอบมน */
+    align-items: center;
+    word-wrap: break-word;
+    /* แยกคำในกรณีที่ยาวเกินไป */
+    height: auto; /* ปรับความสูงอัตโนมัติ */
+}
+
+.result-section {
+    text-align: center;
+    /* จัดข้อความใน result ให้อยู่ด้านซ้าย */
+    padding: 20px;
+}
+
+.no-head {
+    text-align: center;
+    /* จัดข้อความใน result ให้อยู่ด้านซ้าย */
+    padding: 20px;
+    display: flex;
+    /* ใช้ flex เพื่อจัดการองค์ประกอบภายใน */
+    margin-top: 0;
+    border-radius: 15px;
+    /* ขอบมน */
+    flex-direction: column;
+    /* จัดให้แนวตั้ง */
+    align-items: center;
+    height: auto; /* ปรับความสูงอัตโนมัติ */
+}
+
+.result-section h3 {
+    margin: 10px 10px;
+}
+
+/* กรอบใส่ภาพ*/
+.image-container {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    flex: 1;
+    /* ให้ image-container ใช้พื้นที่ตามที่มี */
+    border: 2px dashed #f2b28f;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.image-container img {
+    max-width: 350px;
+    max-height: 350px; /* ขนาดสูงสุดของภาพ */
+    width: auto; /* ปรับขนาดตามอัตราส่วน */
+    height: auto; /* ปรับขนาดตามอัตราส่วน */
+    display: none; /* ซ่อนภาพเริ่มต้น */
+}
+
+
+/* ส่วของการแสดงผล */
+.result-section {
+    flex: 0 0 250px;
+    /* กำหนดความกว้างคงที่ให้กับ result-section */
+    display: flex;
+    flex-direction: column;
+    /* จัดเรียงผลลัพธ์ในแนวตั้ง */
+}
+
+.bin-color {
+    font-size: 2.5rem;
+    font-family: "Noto Sans Thai", sans-serif;
+    font-weight: 700;
+    color: #fbcd40;
+}
+
+
+.result {
+    font-size: 1.5rem;
+    font-family: "Noto Sans Thai", sans-serif;
+    font-weight: 500;
+    color: rgb(232, 194, 132);
+}
+
+.detail {
+    font-size: 1.2rem;
+    font-family: "Noto Sans Thai", sans-serif;
+    color: #fff9f3;
+}
+
+.bin-img {
+    display: flex;
+    /* ใช้ Flexbox */
+    justify-content: center;
+    /* กระจายภาพระหว่างกัน */
+    align-items: center;
+    /* จัดให้อยู่ตรงกลางแนวตั้ง */
+}
+
+.bin-img img {
+    width: 250px;
+}
+
+/* ซ่อนปุ่ม Choose a photo เมื่ออัปโหลดรูปแล้ว */
+#upload-btn {
+    display: block;
+    font-family: "Noto Sans Thai", sans-serif;
+}
+
+#uploaded-img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    /* เพื่อให้ปุ่มลบ X อยู่บนภาพ */
+}
+
+/* ปุ่มถ่ายรูปเป็นวงกลม */
+.circle-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(112, 69, 49, 0.9);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.circle-btn:hover {
+    background-color: rgb(153, 255, 1);
+}
+
+/* ปุ่ม X */
+.clear-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    color: #f2b28f;
+    border: 2px solid #f2b28f;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+    /* ซ่อนไว้ก่อน ถ้ามีรูปแล้วถึงจะแสดง */
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+/* ส่วน Footer */
+footer {
+    background-color: #111;
+    color: #aaa;
+    padding: 40px 0;
+    font-family: "Noto Sans Thai", sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* แบ่งคอลัมน์เป็น 2 คอลัมน์เท่า ๆ กัน */
+    gap: 30px; /* ระยะห่างระหว่างสองคอลัมน์ */
+    padding: 0 80px;
+    margin-bottom: 40px;
+}
+
+.footer-left h1 {
+    color: #32CD32;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.footer-left p {
+    line-height: 1.6;
+    max-width: 400px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column; /* ให้เนื้อหาของ footer-right อยู่ในแนวตั้ง */
+}
+
+.footer-right h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-right .contact-link {
+    display: flex; /* ใช้ flex เพื่อจัดเรียงไอคอนและข้อความในแนวนอน */
+    align-items: center; /* จัดให้ไอคอนและข้อความอยู่ตรงกลางในแนวตั้ง */
+    margin-bottom: 10px; /* ระยะห่างระหว่างลิงก์ */
+    color: white; /* เปลี่ยนสีข้อความให้เป็นสีขาว */
+    text-decoration: none; /* ไม่มีขีดเส้นใต้ */
+}
+
+.footer-right p {
+    line-height: 1.6;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.icon {
+    width: 30px; /* ปรับขนาดไอคอน */
+    height: 30px; /* ปรับขนาดไอคอน */
+    margin-right: 10px; /* ระยะห่างระหว่างไอคอนและข้อความ */
+    align-self: center; /* ทำให้ไอคอนอยู่ตรงกลาง */
+}
+
+.footer-bottom {
+    text-align: center;
+}
+
+/* การจัดหน้าให้ responsive */
+@media (max-width: 768px) {
+    .image-container {
+        width: 100%;
+        height: 300px;
+        /* ลดขนาดสำหรับหน้าจอเล็ก */
+    }
+
+    .camera-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        width: 120px;
+        /* ขนาดปุ่มบนหน้าจอเล็ก */
+    }
+
+    .circle-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
+
+video,
+#captured-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+/* การจัดเรียงของปุ่ม Choose a photo */
+.upload-btn-label {
+    background-color: black;
+    color: yellow;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.result-section {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .camera-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .image-container {
+        height: 200px;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) {
+    .image-container {
+        height: 300px;
+    }
+}
