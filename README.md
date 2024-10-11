@@ -10,8 +10,21 @@ Description :
   
 How to run :
 
-  1.เมื่ออัพโหลดไฟล์ทั้งหมดแล้ว ให้เข้าสู่ environment โดยเปิดเทอมินอลของโฟลเดอร์ model_deploy/python
+  1.เมื่ออัพโหลดไฟล์ทั้งหมดแล้ว ให้เข้าสู่ environment โดยเปิดเทอมินอลของไดเรกทอรี model_deploy/python หรือ สร้าง Virtual Environment เพื่อแยกโปรเจคออกจากการติดตั้งไลบรารีหลักในระบบ
   
-  2.install packages ที่จำเป็นดังนี้ FASTAPI, UVICORN, TENSORFLOW
+  2.install packages ที่จำเป็นดังนี้
+  
+    pip install fastapi[all]  # ติดตั้ง FastAPI พร้อมกับทุกๆ dependencies
+    
+    pip install tensorflow  # ติดตั้ง TensorFlow
+    
+    pip install pymongo  # ติดตั้ง MongoDB driver สำหรับ Python
+    
+    pip install pillow  # ติดตั้ง Pillow สำหรับการจัดการภาพ
+    
+    pip install numpy  # ติดตั้ง NumPy สำหรับการคำนวณเชิงตัวเลข
 
-  3.รันคำสั่ง python -m uvicorn api:app --reload
+
+  3.เข้าถึงไดเรกทอรีของไฟล์ผ่านเทอมินอล และรันคำสั่ง python -m uvicorn api:app --reload
+
+  4.เมื่อ Server รัน สามารถเข้าถึง API ได้ที่ URL: http://127.0.0.1:8000/
