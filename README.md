@@ -11,6 +11,17 @@ Description :
 How to run :
 
   1.เมื่ออัพโหลดไฟล์ทั้งหมดแล้ว ให้เข้าสู่ environment โดยเปิดเทอมินอลของไดเรกทอรี model_deploy/python หรือ สร้าง Virtual Environment เพื่อแยกโปรเจคออกจากการติดตั้งไลบรารีหลักในระบบ
+
+    # สร้าง virtual environment
+    python -m venv myenv
+    
+    # เรียกใช้งาน virtual environment
+    # บน Windows
+    myenv\Scripts\activate
+    
+    # บน macOS/Linux
+    source myenv/bin/activate
+
   
   2.install packages ที่จำเป็นดังนี้
   
